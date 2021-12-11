@@ -6,10 +6,10 @@ $browser-context: 16px !default;
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }
-
+  
   @if (unitless($context)) {
     $context: $context * 1px;
   }
-
+  
   @return math.div($pixels, $context) * 1rem;
 }
